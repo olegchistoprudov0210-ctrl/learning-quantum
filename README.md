@@ -23,4 +23,4 @@ This shows how the CNOT gate relocates quantum information from one state to ano
 
 - ### 03_qutip_matplotlip.ipynb
 **Description:** 
-My first encounter with the qutip library and adding real physics to the graph. Before, there were photographs; now it's a film strip, where you can use the graph to see what happens to the qubit over time. Next, adding friction and noise.
+My first encounter with the qutip library and adding real physics to the graph. Before, there were only "photographs" (static gates); now it's a "film strip", where the graph shows the qubit's life over time. I have also added friction and noise to simulate how quantum information decays in the real world.
