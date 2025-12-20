@@ -20,3 +20,7 @@ In this experiment, I use the "Train Analogy" to understand Matrix Multiplicatio
 
 **Physical meaning:**
 This shows how the CNOT gate relocates quantum information from one state to another based on the control qubit.
+
+- ### 03_qutip_matplotlip.ipynb
+**Description:** 
+My first encounter with the qutip library and adding real physics to the graph. Before, there were photographs; now it's a film strip, where you can use the graph to see what happens to the qubit over time. Next, adding friction and noise.
