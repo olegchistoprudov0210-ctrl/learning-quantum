@@ -36,3 +36,9 @@ Relaxation: Using qt.destroy(2) to simulate energy loss (falling from state 1 to
 Dephasing: Using qt.sigmaz() to simulate the loss of phase information.
 Analogy:
 This is the "Tired Train" experiment. On a perfect track, the train (qubit) oscillates forever. But here, we added "friction" and "wind" (noise). The graph shows the train's motion slowly dying out until it stops completely.
+
+- ### 05_quantum_dynamics_and_3d_sphere.ipynb
+- **Description:** 
+Theory: Lindblad Master Equation for open systems.
+Physics: Competition between coherent driving (Rabi oscillations) and environmental noise (relaxation/dephasing).
+Visuals: 3D Bloch Sphere trajectory showing the "death" of a qubit as it spirals into the center.
