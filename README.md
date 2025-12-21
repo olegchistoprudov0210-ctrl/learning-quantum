@@ -40,3 +40,15 @@ This is the "Tired Train" experiment. On a perfect track, the train (qubit) osci
 Theory: Lindblad Master Equation for open systems.
 Physics: Competition between coherent driving (Rabi oscillations) and environmental noise (relaxation/dephasing).
 Visuals: 3D Bloch Sphere trajectory showing the "death" of a qubit as it spirals into the center.
+
+- ### 06_deutsch_algorithm.ipynb
+- **Description:** 
+Deutsch Algorithm: First Quantum Speedup.
+1. First, we import numpy for linear algebra. We define the Hadamard gate (H) using its normalization factor (1/√2) and the Identity matrix (I) to represent a "do-nothing" operation.
+2. We initialize the system in the state |01) (represented by the vector psi_0). The second qubit is set to |1) to enable the Phase Kickback effect later.
+3. We use np.kron (Kronecker product) to expand 2x2 matrices into 4x4 matrices. H2 applies Hadamard to both qubits, while H_final applies it only to the first qubit to perform interference.
+4. We define a Balanced Oracle using the CNOT matrix. This matrix acts as a "black box" that flips the second qubit if the first one is |1).
+5. psi_1: Create a superposition (The "Mist").
+psi_2: Pass the state through the Oracle (Phase information is transferred).
+final_state: Apply the final Hadamard to resolve the phase into a measurable state.
+6. We calculate prob_1 by summing the squares of the amplitudes where the first qubit is |1) (indices 2 and 3). A result of 1.0 confirms the function is Balanced in just one single run.
