@@ -58,3 +58,4 @@ final_state: Apply the final Hadamard to resolve the phase into a measurable sta
 - Title: Scaling the Deutsch-Jozsa Algorithm to N-Qubits
 - Today, I mastered matrix scaling for quantum systems. I developed a universal function to generate Hadamard portals for any number of qubits (in this example, 3 query qubits and 1 helper qubit).
 - This implementation demonstrates how a Quantum Computer identifies whether a 'Black Box' (Oracle) is Constant or Balanced in just a single run (one query), regardless of the input size. This is a clear example of exponential quantum speedup."
+Used Pure NumPy
