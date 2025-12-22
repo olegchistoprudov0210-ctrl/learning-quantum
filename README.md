@@ -52,3 +52,9 @@ Deutsch Algorithm: First Quantum Speedup.
 psi_2: Pass the state through the Oracle (Phase information is transferred).
 final_state: Apply the final Hadamard to resolve the phase into a measurable state.
 6. We calculate prob_1 by summing the squares of the amplitudes where the first qubit is |1) (indices 2 and 3). A result of 1.0 confirms the function is Balanced in just one single run.
+
+- ### 07_deutsch_jozsa_scaling.ipynb
+- **Description:**
+- Title: Scaling the Deutsch-Jozsa Algorithm to N-Qubits
+- Today, I mastered matrix scaling for quantum systems. I developed a universal function to generate Hadamard portals for any number of qubits (in this example, 3 query qubits and 1 helper qubit).
+- This implementation demonstrates how a Quantum Computer identifies whether a 'Black Box' (Oracle) is Constant or Balanced in just a single run (one query), regardless of the input size. This is a clear example of exponential quantum speedup."
