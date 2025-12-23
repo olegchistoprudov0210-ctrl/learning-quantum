@@ -59,3 +59,7 @@ final_state: Apply the final Hadamard to resolve the phase into a measurable sta
 - Today, I mastered matrix scaling for quantum systems. I developed a universal function to generate Hadamard portals for any number of qubits (in this example, 3 query qubits and 1 helper qubit).
 - This implementation demonstrates how a Quantum Computer identifies whether a 'Black Box' (Oracle) is Constant or Balanced in just a single run (one query), regardless of the input size. This is a clear example of exponential quantum speedup."
 Used Pure NumPy
+
+- ### 08_deutsch_jozsa_balanced_scaling.ipynb
+- **Description:**
+Today I learned how to automate quantum systems. I created a universal function to build portals for any number of qubits. I also built a Balanced Oracle by swapping rows in a matrix. This code can handle 3, 10, or even more qubits in one click, proving that quantum algorithms are faster than classical ones.
