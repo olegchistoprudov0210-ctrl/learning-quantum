@@ -63,3 +63,13 @@ Used Pure NumPy
 - ### 08_deutsch_jozsa_balanced_scaling.ipynb
 - **Description:**
 Today I learned how to automate quantum systems. I created a universal function to build portals for any number of qubits. I also built a Balanced Oracle by swapping rows in a matrix. This code can handle 3, 10, or even more qubits in one click, proving that quantum algorithms are faster than classical ones.
+
+- ### 09_bb84_perfect.ipynb
+- **Description:**
+- Title: Quantum Key Distribution (QKD) — Perfect Channel
+Description: Implementation of the BB84 protocol on pure NumPy. This project simulates a secure communication between Alice and Bob. It demonstrates random basis selection (Z and X), quantum state preparation, and the sifting process. The result is a 100% identical secret key shared between both parties.
+
+- ### 10_bb84_eves_fake.ipynb
+- **Description:**
+- Title: Detecting Eavesdropping (Eve) in BB84 Protocol
+Description: A simulation of a "Man-in-the-Middle" attack (Intercept-Resend). I introduced a spy (Eve) who intercepts qubits and measures them in random bases. Due to the No-Cloning Theorem, this intervention introduces a ~25% error rate, making the spy's presence immediately detectable by Alice and Bob.
