@@ -83,3 +83,13 @@ After using entanglement in previous algorithms (Deutsch, BB84), I decided to pe
 |Φ-⟩ = 1/√2 (|00⟩ - |11⟩)
 |Ψ-⟩ = 1/√2 (|01⟩ - |10⟩)
 using only Linear Algebra.
+
+- ### 12_grover_full_scaling.ipynb
+- **Description:**
+Title: Universal Grover's Search Algorithm (N-Qubit Scaling)
+Implementation of the Grover's search algorithm from scratch using pure NumPy. This project demonstrates quantum speedup in unstructured database searching.
+Technical Highlights:
+Dynamic Scaling: The algorithm works for any number of qubits (n) by dynamically constructing 2ⁿ dimensional operators.Oracle Design: Implemented a phase-inversion
+Oracle that marks the target state with a negative phase.
+Diffuser Construction: Built the "Inversion about the mean" operator using outer products and Hadamard transforms.
+Probability Boost: Successfully demonstrated amplitude amplification, achieving ~78% probability of finding the target state |101) (index 5) in a single iteration for 3 qubits.
