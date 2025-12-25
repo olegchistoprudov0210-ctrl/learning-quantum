@@ -73,3 +73,13 @@ Description: Implementation of the BB84 protocol on pure NumPy. This project sim
 - **Description:**
 - Title: Detecting Eavesdropping (Eve) in BB84 Protocol
 Description: A simulation of a "Man-in-the-Middle" attack (Intercept-Resend). I introduced a spy (Eve) who intercepts qubits and measures them in random bases. Due to the No-Cloning Theorem, this intervention introduces a ~25% error rate, making the spy's presence immediately detectable by Alice and Bob.
+
+- ### 11_bell_states_pure_numpy.ipynb
+- **Description:**
+Title: Complete Bell Basis Generator (Pure NumPy)
+After using entanglement in previous algorithms (Deutsch, BB84), I decided to perform a "Deep Dive" into the source of quantum correlations. In this project, I implemented a universal generator for all four Bell States
+|Φ+⟩ = 1/√2 (|00⟩ + |11⟩)
+|Ψ+⟩ = 1/√2 (|01⟩ + |10⟩)
+|Φ-⟩ = 1/√2 (|00⟩ - |11⟩)
+|Ψ-⟩ = 1/√2 (|01⟩ - |10⟩)
+using only Linear Algebra.
