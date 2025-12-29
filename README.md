@@ -93,3 +93,14 @@ Dynamic Scaling: The algorithm works for any number of qubits (n) by dynamically
 Oracle that marks the target state with a negative phase.
 Diffuser Construction: Built the "Inversion about the mean" operator using outer products and Hadamard transforms.
 Probability Boost: Successfully demonstrated amplitude amplification, achieving ~78% probability of finding the target state |101) (index 5) in a single iteration for 3 qubits.
+
+- ### 13_quantum_teleportation.ipynb
+- **Description:**
+Title: Quantum Teleportation Protocol
+Implementation of the teleportation circuit on 3 qubits using Pure NumPy. The goal is to move a quantum state from Qubit 0 to Qubit 2 using entanglement as a "bridge".
+Key Steps:
+Entanglement: Creating a Bell Pair between Alice and Bob.
+Bell Measurement: Alice entangles the "Secret" with the bridge and collapses the state.
+Correction: Bob uses X and Z gates to restore the original information.
+Why it matters:
+It’s the foundation of the Quantum Internet. We prove that while you can't clone a qubit, you can move its state across space using entanglement and classical bits.
