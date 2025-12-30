@@ -104,3 +104,12 @@ Bell Measurement: Alice entangles the "Secret" with the bridge and collapses the
 Correction: Bob uses X and Z gates to restore the original information.
 Why it matters:
 It’s the foundation of the Quantum Internet. We prove that while you can't clone a qubit, you can move its state across space using entanglement and classical bits.
+
+- ### 14_quantum_fourier_transform_qft.ipynb
+- **Description:**
+- Title: Quantum Fourier Transform (QFT) from Scratch
+Building a universal Quantum Fourier Transform (QFT) engine from scratch. This project moves away from searching and focuses on "Quantum Phase Dynamics" — the ability to detect rhythms and periods in data.
+Хow it works: Phase Rotation:
+Instead of simple 0s and 1s, I used complex exponents (np.exp) to rotate qubit phases.
+Universal Generator: I wrote a manual double-loop matrix generator that scales to any number of qubits by calculating the phase shift for every cell.
+The Detector: I tested the algorithm with periodic signals (like [1, -1, 1, -1]). The QFT successfully identified the "rhythm" and converted it into a sharp peak at a specific position. Why it matters:QFT is the "engine" behind Shor's Algorithm. While Grover searches for a needle in a haystack, QFT finds the hidden frequency of the hay itself. It is the key to breaking modern RSA encryption.
