@@ -113,3 +113,11 @@ Building a universal Quantum Fourier Transform (QFT) engine from scratch. This p
 Instead of simple 0s and 1s, I used complex exponents (np.exp) to rotate qubit phases.
 Universal Generator: I wrote a manual double-loop matrix generator that scales to any number of qubits by calculating the phase shift for every cell.
 The Detector: I tested the algorithm with periodic signals (like [1, -1, 1, -1]). The QFT successfully identified the "rhythm" and converted it into a sharp peak at a specific position. Why it matters:QFT is the "engine" behind Shor's Algorithm. While Grover searches for a needle in a haystack, QFT finds the hidden frequency of the hay itself. It is the key to breaking modern RSA encryption.
+
+- ### 15.bit.flip.correction.ipynb
+- **Description:**
+I am trying to learn English so that I can practice writing descriptions myself, without the help of AI or a translator. Therefore, I will simply state what I did in this code:
+1. Created a logical qubit: Encoded the state of one qubit into three.
+2. Simulated a physical error: Injected noise (Bit-Flip) into a specific qubit of the system.
+3. Wrote a syndrome decoder: Created the check_error function, which analyzes binary indices and finds the "guilty" one using the majority voting method.
+4. Implemented correction (Recovery): Wrote a universal function that returns the system to its original state.
