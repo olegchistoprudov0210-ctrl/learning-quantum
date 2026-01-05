@@ -120,4 +120,14 @@ I am trying to learn English so that I can practice writing descriptions myself,
 1. Created a logical qubit: Encoded the state of one qubit into three.
 2. Simulated a physical error: Injected noise (Bit-Flip) into a specific qubit of the system.
 3. Wrote a syndrome decoder: Created the check_error function, which analyzes binary indices and finds the "guilty" one using the majority voting method.
-4. Implemented correction (Recovery): Wrote a universal function that returns the system to its original state.
+4. Implemented correction (Recovery): wrote a universal function that returns the system to its original state.
+
+- ### 16_phase_flip_error_correction_code.ipynb
+- **Description:**
+In today's project, I implemented a protocol to correct a phase-flip error within a logical qubit consisting of 1 primary qubit and 2 ancillary (helper) qubits.
+How the code works:
+1. Logical Qubit Construction: After encoding the logical qubit, I injected a phase error into the qubit at index 1.
+2. Phase Error Detection: Since phase errors are invisible during standard measurement, I used Hadamard gates (H) applied to all qubits to transform the phase problem into a detectable bit-flip problem.
+3. Error Identification: I used the checkerror(n) function, which analyzes the system and correctly identifies the corrupted qubit (in this case, index 1) using majority voting logic.
+4. Recovery & Restoration: I called the recovery(v, error_bit) function to fix the identified qubit in the bit-flip regime. Finally, I applied Hadamard gates again to all 3 qubits to shift the state back into the original phase basis.
+Final Result: the error was successfully detected and corrected without measuring the entire system or destroying its quantum properties.
